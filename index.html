@@ -39,7 +39,7 @@
     <p>
       
        <label for="email" id="iemail">Email Address *</label><br>
-       <input type="text" name="email" id="iemaili" placeholder="Preencha Aqui Seu Email" autocomplete="email" required>
+       <input type="text" name="email" id="iemaili" placeholder="Preencha Aqui Seu Email" autocomplete="off" required>
 
     </p>
     <p>
@@ -76,7 +76,9 @@
       <input type="checkbox" name="form" id="iformi" required>
     </p>
 
-    <input id="env" type="submit" value="Enviar" onclick="enviar">
+    <input id="env" type="submit" value="Enviar" onclick="enviar()">
+
+    <div id="res"></div>
     
   </form>
 
