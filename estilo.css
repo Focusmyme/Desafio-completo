@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* tipografia */
+
+:root {
+
+    --fontPrincipal:"Karla", sans-serif;
+
+    /* cores primária */
+
+    --Green: hsl(148, 68%, 85%);
+    --Green2: hsl(169, 82%, 27%);
+    --Red:hsl(0, 66%, 54%);
+
+    /* cores secundárias */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey500: hsl(186, 15%, 59%);
+    --Grey900: hsl(187, 24%, 22%);
+}
+
+* {padding: 0px;
+    margin: 0px;
+    font-family: var(--fontPrincipal);
+    color: rgb(85, 85, 85);}
+
+/* configurações */
+
+body {background-color:var(--Green);
+    padding: 10px;}
+
+/* menu principal */
+
+main {max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;}
+
+/* parte 1 */
+
+main > form > h1 {margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(41, 41, 41);}
+
+input {border-radius: 5px;
+    padding: 10px;}
+
+#sec1 {display: flex;
+    justify-content: space-between;}
+
+#sec1 > p > label {margin-bottom: 10px;}
+
+#inomei1 {width: 220px;
+    border: 1px solid gray;
+    margin-top: 10px;}
+
+#iultimonomei1 {width: 220px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+/* parte 2 do form */
+
+#iemaili {border: 1px solid gray;
+    width:478px ;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+/* parte 3 form */
+
+#sec2 {display: flex;
+    justify-content: space-between;}
+
+#igen {margin-left: 10px;}
+
+#general {cursor: pointer;}
+
+#support {cursor: pointer;
+}
+
+.radio-label {margin-left: 10px;}
+
+
+.fieldset1 {display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;}
+
+.fieldset2 {display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+margin-bottom: 10px;}
+
+/* parte 4 message */
+
+
+#imesst {margin-top: 10px;
+    display: block;}
+
+/* parte 5 */
+
+.pcheck {display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+#iformi {margin-right: 10px;
+    cursor: pointer;}   
+
+#env {width: 495px;
+    border: 1px solid gray;
+    background-color: var(--Green2);
+    color: white;}

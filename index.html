@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- link css -->
+
+  <link rel="stylesheet" href="estilo.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+<main>
+  <form action="cadastro.php">
+    
+    <h1>Contact Us</h1>
+
+      <section id="sec1">
+      
+        <p>
+      
+          <label for="nome" id="inomel">First Name *</label><br>
+          <input type="text" name="nome" id="inomei1" placeholder="Digíte Aqui o Seu Email" required>
+          <p id="pjs1"></p>
+      
+        </p>
+        <p>
+      
+          <label for="ultimonome" id="iultimonome">Last Name *</label><br>
+          <input type="text" name="ultimonome"  id="iultimonomei1" required placeholder="Digíte Seu Último Nome Aqui">
+      
+        </p>
+      </section>
+
+    <p>
+      
+       <label for="email" id="iemail">Email Address *</label><br>
+       <input type="text" name="email" id="iemaili" placeholder="Preencha Aqui Seu Email" autocomplete="email" required>
+
+    </p>
+    <p>
+      <label for="query" id="iquery">Query Type *</label><br>
+
+      <section id="sec2">
+
+        <fieldset class="fieldset1">
+
+          <label for="general" id="igen">General Enquiry</label>
+          <input type="radio" name="iquery" id="general">
+
+        </fieldset>
+
+        <fieldset class="fieldset2">
+
+          <label for="support" id="sup" class="radio-label">Support Request</label>
+          <input type="radio" name="iquery" id="support">
+
+        </fieldset>
+
+      </section>
+
+    </p>
+
+    <p>
+
+      <label for="mess" id="imess" class="imesss">Message *</label><br>
+      <textarea name="mess" id="imesst" rows="5" cols="70" required></textarea>
+
+    </p>
+    <p class="pcheck">
+      <label for="form" id="iform">I consent to being contacted by the team</label>
+      <input type="checkbox" name="form" id="iformi" required>
+    </p>
+
+    <input id="env" type="submit" value="Enviar" onclick="enviar">
+    
+  </form>
+
+</main>
+
+<!-- link para o js -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
